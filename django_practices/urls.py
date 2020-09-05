@@ -1,5 +1,4 @@
 """django_practices URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
@@ -18,7 +17,7 @@ from django.urls import path
 
 import helloworld.views as helloworldviews
 import emaillist.views as emaillistviews
-#import guestbook.views as guestbookviews
+import guestbook.views as guestbookviews
 
 urlpatterns = [
     path('hello/', helloworldviews.hello),
@@ -29,10 +28,10 @@ urlpatterns = [
     path('emaillist/form', emaillistviews.form),
     path('emaillist/add', emaillistviews.add),
 
-    #path('guestbook/', guestbookviews.index),
-    #path('guestbook/add', guestbookviews.add),
-    #path('guestbook/deleteform', guestbookviews.deleteform),
-    #path('guestbook/delete', guestbookviews.delete),
+    path('guestbook/', guestbookviews.index),
+    path('guestbook/add', guestbookviews.add),
+    path('guestbook/deleteform', guestbookviews.deleteform),
+    path('guestbook/delete', guestbookviews.delete),
 
     path('admin/', admin.site.urls),
 ]
