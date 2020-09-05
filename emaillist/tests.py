@@ -1,4 +1,4 @@
-# from django.test import TestCase  (Django TDD)
+# from django.test import TestCase  (django TDD)
 import guestbook.models as guestbookmodel
 
 
